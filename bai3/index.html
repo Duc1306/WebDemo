@@ -31,6 +31,30 @@
     <section>
       <h2>Sản phẩm nổi bật</h2>
 
+      <!-- Thanh tìm kiếm -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+        <button id="searchBtn">Tìm</button>
+        <button id="addProductBtn">Thêm sản phẩm</button>
+      </div>
+
+            <!-- Form thêm sản phẩm (ẩn mặc định) -->
+      <form id="addProductForm" class="hidden">
+        <h3>Thêm sản phẩm mới</h3>
+        <label for="name">Tên sản phẩm:</label>
+        <input type="text" id="name" required>
+
+        <label for="desc">Mô tả:</label>
+        <textarea id="desc" rows="3" required></textarea>
+
+        <label for="price">Giá:</label>
+        <input type="number" id="price" required>
+
+        <label for="image">Ảnh (URL):</label>
+        <input type="text" id="image" required>
+
+        <button type="submit">Thêm</button>
+      </form>
 
       <!-- Danh sách sản phẩm -->
       <div id="product-list">
@@ -85,7 +109,8 @@
     <p>&copy; 2025 Fresh&Cool Drinks | 156 Tam Chinh, Hà Nội</p>
   </footer>
 
-
+  <!-- Script -->
+  <script src="script.js"></script>
 
 </body>
 </html>
