@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa hàng Đồ Uống Fresh&Cool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Cửa hàng Đồ Uống Fresh&Cool</h1>
+    <nav>
+      <a href="#">Trang chủ</a> |
+      <a href="#">Sản phẩm</a> |
+      <a href="#">Liên hệ</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- Giới thiệu -->
+    <section>
+      <h2>Chào mừng đến với Fresh&Cool!</h2>
+      <p>Chúng tôi mang đến cho bạn những món đồ uống tươi mát, tốt cho sức khỏe mỗi ngày.</p>
+    </section>
+
+    <!-- Danh sách sản phẩm -->
+    <section>
+      <h2>Sản phẩm nổi bật</h2>
+
+      <!-- Thanh tìm kiếm + Lọc nâng cao -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+        <select id="priceFilter">
+          <option value="all">Tất cả giá</option>
+          <option value="low">Dưới 40.000₫</option>
+          <option value="mid">40.000₫ - 60.000₫</option>
+          <option value="high">Trên 60.000₫</option>
+        </select>
+        <button id="searchBtn">Tìm</button>
+        <button id="addProductBtn">Thêm sản phẩm</button>
+      </div>
+
+      <!-- Form thêm sản phẩm (ẩn ban đầu, hiệu ứng trượt mượt) -->
+      <form id="addProductForm">
+        <h3>Thêm sản phẩm mới</h3>
+
+        <label for="newName">Tên sản phẩm:</label>
+        <input type="text" id="newName" required>
+
+        <label for="newPrice">Giá:</label>
+        <input type="number" id="newPrice" required>
+
+        <label for="newDesc">Mô tả:</label>
+        <textarea id="newDesc" name="newDesc" rows="4" maxlength="300" placeholder="Mô tả sản phẩm..."></textarea>
+
+        <label for="newImage">Ảnh sản phẩm:</label>
+        <input type="file" id="newImage" accept="image/*">
+
+        <p id="errorMsg" style="color:red;"></p>
+
+        <div class="form-actions">
+          <button type="submit">Thêm</button>
+          <button type="button" id="cancelBtn">Hủy</button>
+        </div>
+      </form>
+
+      <!-- Danh sách sản phẩm (JS sẽ render từ localStorage hoặc fetch JSON) -->
+      <div id="product-list"></div>
+    </section>
+
+    <!-- Form liên hệ -->
+    <section>
+      <h2>Liên hệ với chúng tôi</h2>
+      <form action="#" method="post">
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" id="contact-name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Nội dung:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Fresh&Cool Drinks | 156 Tam Chinh, Hà Nội</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

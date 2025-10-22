@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Trà sữa Matcha",
+    "desc": "Vị trà xanh thanh mát hòa quyện sữa béo ngậy.",
+    "price": "45000",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fTNT2Y23wXzq22_bb8XhDs1n7WIUNnHRTg&s"
+  },
+  {
+    "name": "Sinh tố Xoài",
+    "desc": "Sinh tố tự nhiên từ xoài tươi 100%, bổ sung vitamin C.",
+    "price": "40000",
+    "image": "https://dayphache.edu.vn/wp-content/uploads/2016/02/cach-lam-sinh-to-xoai-sua-dac.jpg"
+  },
+  {
+    "name": "Cà phê sữa đá",
+    "desc": "Hương vị Việt Nam đậm đà, đánh thức mọi giác quan.",
+    "price": "35000",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8kzkkHEXTVZIDM78fruM3eHRTNwB-qRfEw&s"
+  }
+]
