@@ -20,7 +20,6 @@
 
   <!-- MAIN -->
   <main>
-
     <!-- Giới thiệu -->
     <section>
       <h2>Chào mừng đến với Fresh&Cool!</h2>
@@ -38,7 +37,7 @@
         <button id="addProductBtn">Thêm sản phẩm</button>
       </div>
 
-            <!-- Form thêm sản phẩm -->
+      <!-- Form thêm sản phẩm -->
       <form id="addProductForm" class="hidden">
         <h3>Thêm sản phẩm mới</h3>
 
@@ -49,7 +48,10 @@
         <input type="number" id="newPrice" required>
 
         <label for="newDesc">Mô tả:</label>
-        <textarea id="newDesc" rows="3"></textarea>
+        <textarea id="newDesc" name="newDesc" rows="4" maxlength="300"></textarea>
+
+        <label for="newImage">Ảnh sản phẩm:</label>
+        <input type="file" id="newImage" accept="image/*">
 
         <p id="errorMsg" style="color:red;"></p>
 
@@ -59,34 +61,29 @@
         </div>
       </form>
 
-
       <!-- Danh sách sản phẩm -->
       <div id="product-list">
-
         <div class="product-item">
           <h3 class="product-name">Trà sữa Matcha</h3>
           <p>Vị trà xanh thanh mát hòa quyện sữa béo ngậy.</p>
           <p class="price">Giá: 45.000₫</p>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fTNT2Y23wXzq22_bb8XhDs1n7WIUNnHRTg&s" alt="Trà sữa matcha" width="250">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fTNT2Y23wXzq22_bb8XhDs1n7WIUNnHRTg&s" alt="Trà sữa matcha">
         </div>
 
         <div class="product-item">
           <h3 class="product-name">Sinh tố Xoài</h3>
           <p>Sinh tố tự nhiên từ xoài tươi 100%, bổ sung vitamin C.</p>
           <p class="price">Giá: 40.000₫</p>
-          <img src="https://dayphache.edu.vn/wp-content/uploads/2016/02/cach-lam-sinh-to-xoai-sua-dac.jpg" alt="Sinh tố xoài" width="250">
+          <img src="https://dayphache.edu.vn/wp-content/uploads/2016/02/cach-lam-sinh-to-xoai-sua-dac.jpg" alt="Sinh tố xoài">
         </div>
 
         <div class="product-item">
           <h3 class="product-name">Cà phê sữa đá</h3>
           <p>Hương vị Việt Nam đậm đà, đánh thức mọi giác quan.</p>
           <p class="price">Giá: 35.000₫</p>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8kzkkHEXTVZIDM78fruM3eHRTNwB-qRfEw&s" alt="Cà phê sữa đá" width="250">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8kzkkHEXTVZIDM78fruM3eHRTNwB-qRfEw&s" alt="Cà phê sữa đá">
         </div>
-
       </div>
-
-
     </section>
 
     <!-- Form liên hệ -->
@@ -105,7 +102,6 @@
         <button type="submit">Gửi</button>
       </form>
     </section>
-
   </main>
 
   <!-- FOOTER -->
@@ -115,6 +111,5 @@
 
   <!-- Script -->
   <script src="script.js"></script>
-
 </body>
 </html>
